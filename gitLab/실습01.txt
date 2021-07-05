@@ -1,0 +1,85 @@
+[Github 특강]
+https://www.notion.so/1595de919fbd4fc1b78cb4ce718e19c4#8817695ceab049c2bf381f88c7244c69
+
+사전조사
+https://bit.ly/big-210705
+
+
+설치하기
+1. git bash (git for windows)
+2. typora
+https://bit.ly/bs-210705
+
+
+(명령어)
+touch a.txt
+touch b.txt
+touch c.txt
+ls
+pwd
+mkdir test
+cd test
+cd ..
+
+[실습]
+=======저장소 생성======
+1. git init :저장소 초기화(생성) -> .git :git 모든 정보
+----------------------------------------
+2. 프로젝트 진행(기능을 구현) - 파일 만드는 것으로 대체 (보기>파일확장명&숨긴 항목)
+touch a.txt :개발을 하나 했다.
+
+======버전 기록을 위하여======
+	버전 확정
+	2-1. add <파일명>: 특정 파일을 커밋하기 위해 추가(Staging area)
+	2-2. commit -m '<커밋 메시지>' : 버전 기록(커밋)
+	         ex) git commit -m 'Add a.txt'
+
+======조회======
+	         git status :git의 지금 상태를 조회 *****
+	         git log : 커밋 목록
+----------------------------------------
+
+
+#커밋(버전) 남기는 사람 정보 등록 -> 최초에 한 번만
+git config --global user.email '자주쓰는메일'
+git config --global user.name 'edutak'
+
+#다시 커밋해보기
+git commit -m 'Add a.txt'
+
+3-2. commit
+
+
+
+상황 - ppt 관련 파일 2개 / 리포트 관련 파일 1개
+touch report.hwp
+touch ppt.pptx
+touch ppt.pdf
+
+#리포트 버전 기록
+git add report.hwp
+git status
+git commit -m '리포트 작업'
+git status
+git log
+git status
+-----------------------------------
+git add .
+git status
+git commit -m '발표자료 작업'
+git log
+git status
+
+
+
+
+
+markdown.md
+마크다운 문법
+
+
+
+
+
+
+
