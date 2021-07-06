@@ -114,3 +114,5 @@ $ git log -2 --online # 한 줄로 최근 2개
 
 ![image-20210705141302460](md-images/image-20210705141302460.png)
 
+![image-20210706190941629](md-images/image-20210706190941629.png)
+
