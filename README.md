@@ -8,7 +8,7 @@
 * typora_setup.md [typora-setup-x64.exe](https://typora.io/#windows)
 * vscode_setup.md [VSCodeSetup-x64-1.57.1.exe](https://code.visualstudio.com/docs/?dv=win)
   * vscode_mac_setting.md
-* pycharm_setup.docx [pycharm-community-2020.3.2.exe]
+* pycharm_setup.docx (pycharm-community-2020.3.2.exe)
 
 
 
@@ -51,3 +51,7 @@
     * fork.md
 
 ### * Python
+
+* [pycharm_setup.docx](https://github.com/yeonjooyou/TIL/blob/master/python/pycharm_setup.docx)
+* pycharm_base.md
+
