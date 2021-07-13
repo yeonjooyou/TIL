@@ -104,20 +104,17 @@ def 함수1 : # 외부함수(outer function)
 ### 4. 재귀함수(reculsive function)
 
 > 외부함수 = 내부함수
+>
+> 함수가 자기 자신을 다시 부르는 함수
 
 ```python
 # 예시 - 팩토리얼 계산
-def 함수1(a) :
-    z = 0
-    n = a
-    z += n
-    print(z)
-    
-    if n =  :
-        exit()
-    z = 함수1(a-1)
-    
-    return z
+def factorial(n) :
+    if n == 1 :
+        return 1
+    else :
+        return n * factorial(n-1)
+print(factorial(int(input("Input Number for Factorial Calculation :"))))
 ```
 
 
