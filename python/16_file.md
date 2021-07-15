@@ -115,7 +115,12 @@ finally:
   help(f.seek)
   ```
 
-  
+
+
+
+![image-20210715172102870](md-images/image-20210715172102870.png)
+
+
 
 
 
