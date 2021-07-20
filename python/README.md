@@ -1,6 +1,6 @@
 # Python
 
-*환경 : pycharm-community-2020.3.2.exe* [pycharm_setup.docx](https://github.com/yeonjooyou/TIL/blob/master/python/pycharm_setup.docx)
+*환경 : Python 3.8(pycharm-community-2020.3.2.exe)* [pycharm_setup.docx](https://github.com/yeonjooyou/TIL/blob/master/python/pycharm_setup.docx)
 
 * 00_pycharm_base.md
 * 00_coding_convention.md
@@ -20,3 +20,6 @@
 * 14_stdm.md
 * 15_exception_handling.md
 * 16_file.md
+* 17_oop.md
+* 18_class.md
+* 19_module.md
