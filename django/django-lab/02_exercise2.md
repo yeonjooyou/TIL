@@ -74,7 +74,7 @@ def exercise2(request):
 
 
 
-> 결과 흐름)
+> 결과 flow)
 >
 > `?type=memberlist` 라는 query를 전달하면, if type == 'memberlist'에서 참이고, context에 members를 전달하게 된다. 이후, exercise2.html 파일에서 { % if members % }에 걸리게 되고, 해당 블록을 실행하게 된다.
 >
@@ -98,7 +98,24 @@ def exercise2(request):
 
 
 
-3. 브라우저에서 http://localhost:8000/workapp/exercise2/?type=number 를 입력하여 요청하면 다음과 같이 입력 화면이 출력된다..
+3. 브라우저에서 http://localhost:8000/workapp/exercise2/?type=number 를 입력하여 요청하면 다음과 같이 입력 화면이 출력된다.
 
 ![image-20210726190301867](md-images/image-20210726190301867.png)
 
+
+
+
+
+## 소스코드 리뷰 및 수정
+
+> *Query 문자열이 전달되지 않으면 “type=memberlist 또는 type=number 로 쿼리를 전달하세요”라는 메시지를 **뷰에서 템플릿으로 전달**한다.*
+>
+> 라는 사항에 대한 소스를 수정하였습니다.
+
+![image-20210727094416347](md-images/image-20210727094416347.png)
+
+> ⚠ type = request.GET.get('type', None)에서 None을 주지 않아도 자동으로 None을 주게 되어 있다. 그러므로 None은 생략한다.
+
+
+
+![image-20210727094420779](md-images/image-20210727094420779.png)
