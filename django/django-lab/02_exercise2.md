@@ -106,6 +106,14 @@ def exercise2(request):
 
 
 
+## 서버 프로그램의 diagram
+
+![image-20210727115332927](md-images/image-20210727115332927.png)
+
+
+
+
+
 ## 소스코드 리뷰 및 수정
 
 > *Query 문자열이 전달되지 않으면 “type=memberlist 또는 type=number 로 쿼리를 전달하세요”라는 메시지를 **뷰에서 템플릿으로 전달**한다.*
