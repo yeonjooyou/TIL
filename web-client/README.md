@@ -6,3 +6,5 @@
 * 02_css.md
 * 03_css3.md
 * 04_javascript.md
+* 05_ggmap
+* 06_kkmap
