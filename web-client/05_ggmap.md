@@ -12,10 +12,12 @@
 
 ## 1. Google Map
 
+> [ 구글의 지도 API 관련 URL ](https://developers.google.com/maps/gmp-get-started?hl=ko)
+
 ### 0. 구글 지도 API 키 값 입력하기
 
 ```html
-<script src="https://maps.googleapis.com/maps/api/js?key=" ></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=키값" ></script>
 ```
 
 
@@ -40,7 +42,7 @@
 
 
 
-### 1-2. spot을 찍어서 출력하는 경우
+### 1-2. marker를 찍어서 출력하는 경우
 
 ```html
 <script>
