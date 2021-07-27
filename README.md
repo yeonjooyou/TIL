@@ -9,6 +9,7 @@
 * vscode_setup.md [VSCodeSetup-x64-1.57.1.exe](https://code.visualstudio.com/docs/?dv=win)
   * vscode_mac_setting.md
 * pycharm_setup.docx [Python 3.8(pycharm-community-2020.3.2.exe)]
+* django 3.2.5
 
 
 
@@ -32,4 +33,7 @@
 * java script
 
 ### * Django
+
+* django
+  * django-lab
 
