@@ -96,8 +96,8 @@ img {
     width:15%;
     height:150px;
     margin:10px;
-	border:1px solid grey;
-    box-shadow: 10px 10px 5px grey;
+    border:1px solid black;
+    box-shadow:10px 10px 5px gray;
 }
 {% endblock %}
 
@@ -143,6 +143,10 @@ img {
     </div>
 {% endblock %}
 ```
+
+> get 방식이든 post 방식이든 url 주소 문자열 끝에 `/` 를 붙이는 습관을 들이자.
+>
+> 예) "/workapp/basket1/?pid={{data}}"
 
 
 
@@ -228,8 +232,7 @@ a {text-decoration-line: none;}
 
 ### <실패 코드>
 
-* 위의 내용을 해내는 과정에서 다음과 같은 실패코드가 나오기도 했다.
-  * img를 찾는 경로에 전달받은 쿼리값을 수정하지 않고 그대로 입력하면 원하는 쿼리값 그대로를 문자열로 받는 것이 아닌, {{pid}}라는  문자열로 받는다.😅
+* img를 찾는 경로에서 **템플릿으로 찾을 경우** 전달받을 쿼리값을 수정하지 않고 그대로 입력하면 원하는 쿼리값 그대로를 문자열로 받는 것이 아닌, {{pid}}라는  문자열로 받는다.😅
 
 ```python
 def basket1(request):
@@ -243,22 +246,87 @@ def basket1(request):
 <img src="{% static 'images/{{pid}}.jpg' %}">
 ```
 
-​	이를 해결하기 위한 또 다른 방법으로는, for 템플릿을 사용하여 숫자 1~10로 구성된 datalist로부터 data를 받아와 처리하는 것이다.
 
-즉, **exerciseproject>workapp>templates>product1.html**의 일부 코드구현 방식은 다음과 같다.
+
+#### 해결방법
+
+> 이미지 경로를 직접 지정한다. 이때는 다음과 같이 {{ pid }} 를 이용하여 전달받을 수 있다.
 
 ```html
+<img src="/static/images/{{ pid }}.jpg">
+```
+
+
+
+#### 추가 보완
+
+> for 템플릿(반복문)을 사용하여 숫자 1~10로 구성된 datalist로부터 data를 받아와 처리하는 것이다.
+
+**exerciseproject>workapp>views.py**
+
+```python
+def product1(request) :
+    return render(request, "product1.html", {'datalist':[x for x in range(1, 11)]})
+
+def basket1(request) :
+    pid = request.GET.get("pid")
+    dt = datetime.now()
+    context = {'pid':pid, 'current_date':dt}
+    return render(request, "basket1.html", context)
+```
+
+
+
+**exerciseproject>workapp>templates>product1.html**
+
+```html
+{% extends 'basesimple.html' %}
+
+{% block mycss %}
+img {
+    width:150px;
+    height:150px;
+    margin:10px;
+    padding:10px;
+    border:1px solid black;
+    box-shadow:10px 10px 5px gray;
+}
+{% endblock %}
+
 {% block mycontent %}
 <h2>원하는 상품을 클릭 해주세요!!!</h2>
 <hr>
 <section>
 	{% for data in datalist %}
-        <a href="/workapp/basket1?pid={{data}}"><img src='/static/images/{{data}}.jpg'></a>
+        <a href="/workapp/basket1/?pid={{data}}"><img src='/static/images/{{data}}.jpg'></a>
         {% if data == 5 %}
             <br>
         {% endif %}
     {% endfor %}
 </section>
+{% endblock %}
+```
+
+
+
+**exerciseproject>workapp>templates>basket1.html**
+
+```html
+{% extends 'basesimple.html' %}
+
+{% block mycss %}
+a {
+	text-decoration:none;
+}
+{% endblock %}
+
+{% block mycontent %}
+<h2>
+    요청시간 : {{ current_date|date:"Y년 m월 d일 H시 i분 s초" }}
+</h2>
+선택된 상품: <br>
+<img src = '/static/images/{{ pid }}.jpg' width="200"><br>
+<a href="{% url 'product1' %}">상품 선택 화면으로</a>
 {% endblock %}
 ```
 
