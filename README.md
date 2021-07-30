@@ -10,6 +10,7 @@
   * vscode_mac_setting.md
 * pycharm_setup.docx [Python 3.8(pycharm-community-2020.3.2.exe)]
 * django 3.2.5
+* HeidiSQL 11.2.0
 
 
 
@@ -28,12 +29,14 @@
 
 ### * Web-Client
 
-* html5
-* css3
-* java script
+* web-client
+  * HTML5
+  * CSS3
+  * JavaScript
 
 ### * Django
 
 * django
   * django-lab
+  * HeidiSQL
 
