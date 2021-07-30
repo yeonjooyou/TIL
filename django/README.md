@@ -11,6 +11,14 @@
 * 08_exam7~exam13.md
 * 09_xml,json.md
 * 10_ajax.md
+* 11_database.md
+* 12_model.md
+* 13_migration.md
+* 14_model_API.md
+* 15_heidisql.md
+* 16_thirdapp.md
+* 17_field_lookups.md
+* 18_fourthapp.md
 
 
 
