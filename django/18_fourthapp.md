@@ -161,6 +161,13 @@ class Meeting(models.Model) :
 
 ![image-20210730144017337](md-images/image-20210730144017337.png)
 
+> MTV 패턴
+>
+> * Model : 데이터 저장 형태 설정
+> * Template : 유저에게 보여지는 화면 설정
+> * View : 데이터를 처리해서 가공
+> * (+) URLconf(URL 설계) : 가공한 데이터를 유저가 보는 화면으로 넘김
+
 
 
 ## 생성된 예약 테이블
@@ -168,4 +175,20 @@ class Meeting(models.Model) :
 ![image-20210730143748989](md-images/image-20210730143748989.png)
 
 
+
+
+
+# ORM(Object-Relation Mapping)
+
+> OOP 프로그래밍에서 RDBMS를 연동할 때, 데이터베이스와 OOP 프로그래밍 언어 간의 호환이 되지 않는 데이터를 변환하는 프로그래밍 기법
+
+![image-20210802132348446](md-images/image-20210802132348446.png)
+
+* 장점
+  * SQL문을 몰라도 DB 연동이 가능하다.
+  * SQL의 절차적인 접근이 아닌 객체지향적인 접근으로 인해 생산성이 증가한다.
+* 단점
+  * ORM만으로 완전한 서비스를 구현하기 어렵다.
+
+![image-20210802132259013](md-images/image-20210802132259013.png)
 
