@@ -11,6 +11,8 @@
 * pycharm_setup.docx [Python 3.8(pycharm-community-2020.3.2.exe)]
 * django 3.2.5
 * HeidiSQL 11.2.0
+* R > 00_install R.md[R 4.1.1 for Windows](https://cran.seoul.go.kr/)
+* R > 00_install RStudio.md [RStudio Desktop 1.4.1717](https://www.rstudio.com/products/rstudio/download/#download)
 
 
 
@@ -39,4 +41,8 @@
 * django
   * django-lab
   * HeidiSQL
+
+### * R
+
+* R / RStudio
 
