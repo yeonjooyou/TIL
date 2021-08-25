@@ -214,6 +214,23 @@ content
 
 
 
+# OPEN API를 활용하는 데이터 수집
+
+> 주요 SNS 사이트나 관공서들은 국민들이 필요로 하는 데이터들을 편하게 수집할 수 있도록 OPEN API를 제공한다. 대부분 데이터를 수집해도 좋다는 승인을 받고 인증키 등을 사용하여 요청하도록 한다.
+
+* URL 형식(= Restful 방식 API)
+  * 데이터 수집을 할 수 있도록 관련된 URL 문자열을 제공
+* 패키지를 설치해서 관련 함수를 이용
+  * 예) library(rtweet)
+
+**MIME TYPE 문자열**
+
+* 모든 문서(텍스트, 바이너리)들이 어떠한 문서인지를 알리는 규격화된 문자열
+* major type / minor type으로 구성
+  * image/png, image/jpg, image/gif, text/html, text/json, text/xml, application/gzip, application/ms_xxx, application/json/, application/xml ...
+
+
+
 ## 네이버의 뉴스와 블로그 글 읽어오기
 
 > https://developers.naver.com/docs/search/blog/ 에서 내용 검토
