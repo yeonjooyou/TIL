@@ -20,6 +20,8 @@
   * [R 4.1.1 for Windows](https://cran.seoul.go.kr/)
 * R > 00_install RStudio.md
   *  [RStudio Desktop 1.4.1717](https://www.rstudio.com/products/rstudio/download/#download)
+* jdk 1.8.0_231
+  * jdk-8u231-windows-x64.exe
 
 
 
