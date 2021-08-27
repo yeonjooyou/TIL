@@ -42,7 +42,7 @@
   * cd C:\yyj\Rexam\selenium
   * java -Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalone-4.0.0-alpha-1.jar -port 4445
 
-  > 이때, 오타 방지를 위해 위의 코드를 복사하여 붙여넣기 할 경우, 복사한 후 cmd 창에서 오른쪽 방향키를 통해 붙여넣기를 실행한다.
+  > 이때, 오타 방지를 위해 위의 코드를 복사하여 붙여넣기 할 경우, 복사한 후 cmd 창에서 마우스 우클릭을 통해 붙여넣기를 실행한다.
 
 ![image-20210826105523077](md-images/image-20210826105523077.png)
 
