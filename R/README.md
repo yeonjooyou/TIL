@@ -12,4 +12,9 @@
 * 02_syntax.md
 * 03_API.md
 * 04_static_data_collection.md
+* 05_install_jdk.md
+* 06_dynamic_data_collection.md
+* 07_text_mining1.md
+* 08_text_mining2.md
+* 09_basic_visualization.md
 
