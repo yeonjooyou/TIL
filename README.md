@@ -22,6 +22,8 @@
   *  [RStudio Desktop 1.4.1717](https://www.rstudio.com/products/rstudio/download/#download)
 * jdk 1.8.0_231
   * jdk-8u231-windows-x64.exe
+* Anaconda3
+  * [Anaconda3-2021.05-Windows-x86_64.exe](https://www.anaconda.com/products/individual)
 
 
 
@@ -86,8 +88,28 @@
 * R / RStudio
 
 > *곽기영, R을 이용한 통계데이터분석, 청람, 2019.10.10*
+>
+> <img src="md-images/image-20210924174053501.png" alt="image-20210924174053501" style="zoom:40%;" />
 
 > *오세종, 신현석, 난생처음 R 코딩 & 데이터 분석, 한빛아카데미, 2021.01.05*
 >
 > ![image-20210818181237633](md-images/image-20210818181237633.png)
+
+
+
+### ◼ Anaconda
+
+> *오승환, 파이썬 머신러닝 판다스 데이터 분석, 정보문화사, 2019.06.15*
+>
+> ![image-20210924173916047](md-images/image-20210924173916047.png)
+
+> *이영호, 파이썬으로 경험하는 빅데이터 분석과 머신러닝, 생능출판사, 2021.02.15*
+>
+> ![image-20210924174256875](md-images/image-20210924174256875.png)
+
+
+
+
+
+
 
