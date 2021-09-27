@@ -83,3 +83,9 @@
 
 
 
+### 형식
+
+> first.ipynb 파일을 메모장으로 열어보면, key : value 쌍의 JSON형식임을 알 수 있다.
+
+![image-20210927102826982](md-images/image-20210927102826982.png)
+
