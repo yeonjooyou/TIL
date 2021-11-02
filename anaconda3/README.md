@@ -7,7 +7,10 @@
 * 02_pydatavenv.md
 * 03_chromedriver.md
 * 04_package1.md
-* 05_package1.md
+* 05_package2.md
+* 06_package3.md
+* 07_package_error.md
+* 08_package4.md
 
 
 
